@@ -1,8 +1,8 @@
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 
-const Message = () => {
-  const isMe = true;
+const Message = ({ message }) => {
+  const isMe = message.user.id === "u1";
 
   return (
     <View
@@ -11,10 +11,11 @@ const Message = () => {
         {
           backgroundColor: isMe ? "#128C7E" : "#34B7F1",
           marginLeft: isMe ? "auto" : 10,
+          marginRight: isMe ? 10 : "auto",
         },
       ]}
     >
-      <Text style={styles.text}>Message</Text>
+      <Text style={styles.text}>{message.content}</Text>
     </View>
   );
 };
