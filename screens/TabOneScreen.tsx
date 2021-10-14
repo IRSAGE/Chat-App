@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Image, StyleSheet } from "react-native";
+import { StyleSheet } from "react-native";
 import ChatRoomItem from "../components/ChatRoomItem";
 import { Text, View } from "../components/Themed";
 
@@ -13,7 +13,7 @@ export default function TabOneScreen() {
 }
 
 const styles = StyleSheet.create({
-  container:{
-    flex:1
-  }
+  container: {
+    flex: 1,
+  },
 });
