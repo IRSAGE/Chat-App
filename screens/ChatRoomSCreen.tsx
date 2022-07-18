@@ -4,10 +4,11 @@ import Message from "../components/Message";
 import { View } from "../components/Themed";
 import Chats from "../assets/dummy-data/Chats";
 import MessageInput from "../components/MessageInput";
-import { useRoute } from "@react-navigation/core";
+import { useRoute, useNavigation } from "@react-navigation/core";
 
 const ChatRoomSCreen = () => {
   const route = useRoute();
+  const navigation = useNavigation();
   console.warn("ChatRoom: ", route.params?.id);
   return (
     <SafeAreaView style={styles.page}>
