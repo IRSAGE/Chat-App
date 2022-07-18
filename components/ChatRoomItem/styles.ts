@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
     left: 55,
     top: 10,
   },
-  bagdeText: { fontSize: 12 },
+  bagdeText: { fontSize: 12, color: "white" },
   rightContainer: {
     flex: 1,
     justifyContent: "center",

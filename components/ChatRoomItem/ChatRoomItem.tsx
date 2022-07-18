@@ -26,11 +26,10 @@ export default function ChatRoomItem({ chatRoom }) {
           <Text style={styles.name}>{user.name}</Text>
           <Text style={styles.text}> {chatRoom.lastMessage.createdAt}</Text>
         </View>
-        <Text numberOfLines={2} style={styles.text}>
+        <Text numberOfLines={1} style={styles.text}>
           {chatRoom.lastMessage.content}
         </Text>
       </View>
     </View>
-    
   );
 }

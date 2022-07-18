@@ -8,11 +8,12 @@ import MessageInput from "../components/MessageInput";
 const ChatRoomSCreen = () => {
   return (
     <SafeAreaView style={styles.page}>
-      <View>
+      <View style={{ flex: 1 }}>
         <FlatList
           data={Chats.messages}
           renderItem={({ item }) => <Message message={item} />}
           showsVerticalScrollIndicator={false}
+          inverted
         />
         <MessageInput />
       </View>
